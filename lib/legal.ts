@@ -35,8 +35,7 @@ export const impressum: LegalDoc = {
     {
       heading: "Umsatzsteuer",
       body: [
-        "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: [USt-IdNr. ergänzen, sofern vorhanden].",
-        "Sofern die Kleinunternehmerregelung nach § 19 UStG in Anspruch genommen wird, wird keine Umsatzsteuer ausgewiesen.",
+        "Gemäß § 19 UStG (Kleinunternehmerregelung) wird keine Umsatzsteuer berechnet und daher nicht gesondert ausgewiesen.",
       ],
     },
     {
