@@ -1,9 +1,10 @@
 import type { Content } from "./types";
+import { PHONE_TEL, PHONE_LABEL } from "./site";
 
 export const en: Content = {
   nav: { services: "Services", how: "How it works", results: "Results", contact: "Contact", quote: "Quote" },
-  phone: "01701234567",
-  phoneLabel: "0170 1234567",
+  phone: PHONE_TEL,
+  phoneLabel: PHONE_LABEL,
   badge: "Insured & registered · Fixed-price guarantee",
   hero: {
     title: "Declutter. Move. Dispose.",
@@ -90,6 +91,12 @@ export const en: Content = {
     email: "info@clearfix.de",
     areaLabel: "Service area",
     area: "Berlin & surroundings",
+    addressLabel: "Address",
+  },
+  whatsapp: {
+    message: "Hi Clear Fix, I'd like a free quote for:",
+    fab: "Message us on WhatsApp",
+    optin: "Message us directly on WhatsApp — we usually reply within minutes.",
   },
   footer: {
     rights: "© 2026 Clear Fix · Owner: Max Mustermann · Berlin",

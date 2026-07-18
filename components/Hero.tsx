@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
+import { whatsappLink } from "@/lib/site";
 
 export function Hero() {
   const { t } = useLanguage();
-  const wa = "https://wa.me/491701234567";
+  const wa = whatsappLink(t.whatsapp.message);
 
   return (
     <section id="top" className="bg-brand text-white">

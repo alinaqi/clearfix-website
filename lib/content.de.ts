@@ -1,9 +1,10 @@
 import type { Content } from "./types";
+import { PHONE_TEL, PHONE_LABEL } from "./site";
 
 export const de: Content = {
   nav: { services: "Leistungen", how: "Ablauf", results: "Ergebnisse", contact: "Kontakt", quote: "Angebot" },
-  phone: "01701234567",
-  phoneLabel: "0170 1234567",
+  phone: PHONE_TEL,
+  phoneLabel: PHONE_LABEL,
   badge: "Versichert & angemeldet · Festpreis-Garantie",
   hero: {
     title: "Entrümpeln. Umziehen. Entsorgen.",
@@ -90,6 +91,12 @@ export const de: Content = {
     email: "info@clearfix.de",
     areaLabel: "Einsatzgebiet",
     area: "Berlin & Umgebung",
+    addressLabel: "Adresse",
+  },
+  whatsapp: {
+    message: "Hallo Clear Fix, ich hätte gerne ein kostenloses Angebot für:",
+    fab: "Per WhatsApp schreiben",
+    optin: "Schreib uns direkt per WhatsApp — wir antworten meist innerhalb weniger Minuten.",
   },
   footer: {
     rights: "© 2026 Clear Fix · Inhaber: Max Mustermann · Berlin",

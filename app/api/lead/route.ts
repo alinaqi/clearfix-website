@@ -12,10 +12,10 @@ export async function POST(req: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.LEAD_TO_EMAIL;
+  const to = process.env.LEAD_TO_EMAIL || "bsr12459@outlook.de";
   const from = process.env.LEAD_FROM_EMAIL || "Clear Fix <onboarding@resend.dev>";
-  if (!apiKey || !to) {
-    console.error("Missing RESEND_API_KEY or LEAD_TO_EMAIL");
+  if (!apiKey) {
+    console.error("Missing RESEND_API_KEY");
     return NextResponse.json({ error: "not_configured" }, { status: 500 });
   }
 

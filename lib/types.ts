@@ -63,6 +63,8 @@ export interface Content {
     email: string;
     areaLabel: string;
     area: string;
+    addressLabel: string;
   };
+  whatsapp: { message: string; fab: string; optin: string };
   footer: { rights: string; imprint: string; privacy: string };
 }
