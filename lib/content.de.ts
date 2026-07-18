@@ -99,7 +99,7 @@ export const de: Content = {
     optin: "Schreib uns direkt per WhatsApp — wir antworten meist innerhalb weniger Minuten.",
   },
   footer: {
-    rights: "© 2026 Clear Fix · Inhaber: Max Mustermann · Berlin",
+    rights: "© 2026 Clear Fix · Inhaber: Laky · Berlin",
     imprint: "Impressum",
     privacy: "Datenschutz",
   },

@@ -1,4 +1,10 @@
 // Central contact details — update here to change them site-wide.
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "https://clearfix.de");
+
 export const PHONE_TEL = "+4917642433979";
 export const PHONE_LABEL = "+49 176 42433979";
 export const WHATSAPP_NUMBER = "4917642433979";

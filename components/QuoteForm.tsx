@@ -76,7 +76,12 @@ export function QuoteForm() {
               {status === "sending" ? t.form.sending : t.form.submit}
             </button>
             {status === "error" && <p className="text-center text-sm text-red-600">{t.form.error}</p>}
-            <p className="text-center text-xs text-muted">{t.form.consent}</p>
+            <p className="text-center text-xs text-muted">
+              {t.form.consent}{" "}
+              <a href="/datenschutz" className="underline hover:text-brand">
+                {t.footer.privacy}
+              </a>
+            </p>
           </form>
         )}
       </div>

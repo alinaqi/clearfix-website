@@ -12,10 +12,10 @@ export function Footer() {
         <Logo size={32} />
         <p>{t.footer.rights}</p>
         <div className="flex gap-5">
-          <a href="#" className="hover:text-brand">
+          <a href="/impressum" className="hover:text-brand">
             {t.footer.imprint}
           </a>
-          <a href="#" className="hover:text-brand">
+          <a href="/datenschutz" className="hover:text-brand">
             {t.footer.privacy}
           </a>
         </div>
