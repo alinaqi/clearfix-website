@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #1e6b47;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fafaf7;
+  color: #1a2420;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-white hover:bg-brand-dark;
+  }
+  .btn-whatsapp {
+    @apply btn bg-whatsapp text-white hover:brightness-95;
+  }
+  .btn-outline {
+    @apply btn border border-line bg-white text-brand hover:bg-brand-soft;
+  }
+  .kicker {
+    @apply text-sm font-semibold uppercase tracking-wide text-brand;
+  }
+  .section-title {
+    @apply mt-2 text-3xl font-extrabold tracking-tight text-brand-darker sm:text-4xl;
+  }
+}
