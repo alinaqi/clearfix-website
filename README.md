@@ -40,5 +40,19 @@ notification email. If email isn't configured yet, the endpoint returns
 
 ## Editing content
 
-All copy lives in `lib/content.de.ts` and `lib/content.en.ts`.
+Marketing copy lives in `lib/content.de.ts` / `lib/content.en.ts`.
 Images are in `public/images`. The logo is `public/logo.svg`.
+
+### Owner editor for legal pages (`/admin`)
+
+The Impressum and Datenschutz texts are editable through a password-protected
+editor at **`/admin`** — no code changes needed. Edits are saved to **Vercel
+Blob** and go live immediately; if no Blob store or saved version exists, the
+built-in defaults (`lib/legal.ts`, `lib/legal.datenschutz.ts`) are shown.
+
+Setup on Vercel:
+
+1. **Storage → Create a Blob store** and connect it to this project
+   (this auto-adds `BLOB_READ_WRITE_TOKEN`).
+2. Add **`ADMIN_PASSWORD`** under Environment Variables — the login password.
+3. Redeploy. Visit `/admin`, log in, edit, save.

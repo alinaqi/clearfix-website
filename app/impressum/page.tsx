@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
-import { impressum } from "@/lib/legal";
+import { getLegalDoc } from "@/lib/legal-store";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Impressum",
@@ -8,6 +10,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-export default function ImpressumPage() {
-  return <LegalPage doc={impressum} />;
+export default async function ImpressumPage() {
+  const doc = await getLegalDoc("impressum");
+  return <LegalPage doc={doc} />;
 }

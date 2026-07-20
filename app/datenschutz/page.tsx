@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
-import { datenschutz } from "@/lib/legal.datenschutz";
+import { getLegalDoc } from "@/lib/legal-store";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
@@ -8,6 +10,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-export default function DatenschutzPage() {
-  return <LegalPage doc={datenschutz} />;
+export default async function DatenschutzPage() {
+  const doc = await getLegalDoc("datenschutz");
+  return <LegalPage doc={doc} />;
 }
